@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ResQWave – Submit Aid Request</title>
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+  <!-- main JS (handles the form POST) -->
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <h1>🆘 ResQWave: Submit Aid Request</h1>
+
+  <form id="aidForm" action="/submit" method="POST" enctype="multipart/form-data">
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="description">Description</label><br>
+    <textarea id="description" name="description" required></textarea><br>
+
+    <label for="image">Upload Image (optional)</label><br>
+    <input type="file" id="image" name="image" accept="image/*"><br>
+
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <p><a href="/view.html">🔎 View All Submissions</a></p>
+</body>
+</html>
